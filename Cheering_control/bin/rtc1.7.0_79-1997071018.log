@@ -1,0 +1,31 @@
+Oct 30 17:39:36.159 Manager INFO     : 1.1.0
+Oct 30 17:39:36.160 Manager INFO     : Copyright (C) 2003-2008
+Oct 30 17:39:36.161 Manager INFO     :   Noriaki Ando
+Oct 30 17:39:36.162 Manager INFO     :   Task-intelligence Research Group,
+Oct 30 17:39:36.162 Manager INFO     :   Intelligent Systems Research Institute, AIST
+Oct 30 17:39:36.163 Manager INFO     : Manager starting.
+Oct 30 17:39:36.163 Manager INFO     : Starting local logging.
+Oct 30 17:39:36.375 NamingManager INFO     : NameServer connection succeeded: corba/localhost:2809
+Oct 30 17:39:37.535 ManagerServant INFO     : Master manager not found.
+Oct 30 17:39:37.549 LocalServiceAdmin INFO     : All the local services are enabled.
+Oct 30 17:39:37.750 RTObject_impl INFO     : 1 execution contextwas created.
+Oct 30 17:39:37.828 RTObject_impl INFO     : Initial active configuration set is default-set.
+Oct 30 17:40:16.753 SdoServiceAdmin WARN     : No available SDO service in the factory: 
+Oct 30 17:40:16.793 SdoServiceAdmin WARN     : No available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+Oct 30 17:47:43.897 Training_start WARN     : Exception caught: minor code.1398079689
+Oct 30 17:47:44.957 count WARN     : Dead connection:ca987c95-5b73-423d-9110-c8e8bd671077
+Oct 30 17:47:45.971 count WARN     : Exception caught: minor code(1398079689).org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 201  completed: No
+Oct 30 17:57:16.404 count WARN     : Dead connection:56d8ff39-2876-4882-bdf0-1cbfdeff11f1
+Oct 30 17:57:17.517 count WARN     : Exception caught: minor code(1398079689).org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 201  completed: No
+Oct 30 17:57:18.705 Training_start WARN     : Dead connection:68e4a5c1-243d-4262-aa79-807f233cd9ac
+Oct 30 17:57:19.767 Training_start WARN     : Exception caught: minor code.1398079689
+Oct 30 17:58:29.113 count WARN     : Dead connection:ef109fe8-6bcd-497e-b48a-603dc6f13e71
+Oct 30 17:58:30.116 count WARN     : Exception caught: minor code(1398079689).org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 201  completed: No
+Oct 30 17:58:31.127 Training_start WARN     : Dead connection:875132bd-8534-4f9c-984f-0d683012d5ad
+Oct 30 17:58:32.132 Training_start WARN     : Exception caught: minor code.1398079689
+Oct 30 18:01:36.994 count WARN     : Dead connection:d1c875c7-308d-4915-be63-f35e1943563d
+Oct 30 18:01:37.998 count WARN     : Exception caught: minor code(1398079689).org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 201  completed: No
+Oct 30 18:01:39.005 Training_start WARN     : Dead connection:036b3dc6-6c60-4d2e-b553-cbfb0b604b4a
+Oct 30 18:01:40.013 Training_start WARN     : Exception caught: minor code.1398079689
+Oct 30 18:04:38.882 Training_start WARN     : Dead connection:ddb85bce-014f-465a-bc9c-8771c7153c24
+Oct 30 18:04:39.934 Training_start WARN     : Exception caught: minor code.1398079689

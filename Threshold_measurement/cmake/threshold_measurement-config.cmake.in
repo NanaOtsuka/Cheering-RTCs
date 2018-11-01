@@ -1,0 +1,54 @@
+# Threshold_measurement CMake config file
+#
+# This file sets the following variables:
+# Threshold_measurement_FOUND - Always TRUE.
+# Threshold_measurement_INCLUDE_DIRS - Directories containing the Threshold_measurement include files.
+# Threshold_measurement_IDL_DIRS - Directories containing the Threshold_measurement IDL files.
+# Threshold_measurement_LIBRARIES - Libraries needed to use Threshold_measurement.
+# Threshold_measurement_DEFINITIONS - Compiler flags for Threshold_measurement.
+# Threshold_measurement_VERSION - The version of Threshold_measurement found.
+# Threshold_measurement_VERSION_MAJOR - The major version of Threshold_measurement found.
+# Threshold_measurement_VERSION_MINOR - The minor version of Threshold_measurement found.
+# Threshold_measurement_VERSION_REVISION - The revision version of Threshold_measurement found.
+# Threshold_measurement_VERSION_CANDIDATE - The candidate version of Threshold_measurement found.
+
+message(STATUS "Found Threshold_measurement-@PROJECT_VERSION@")
+set(Threshold_measurement_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(Threshold_measurement_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(Threshold_measurement_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(Threshold_measurement_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(Threshold_measurement_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(Threshold_measurement_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(Threshold_measurement_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(Threshold_measurement_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(Threshold_measurement_VERSION @PROJECT_VERSION@)
+set(Threshold_measurement_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(Threshold_measurement_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(Threshold_measurement_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(Threshold_measurement_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

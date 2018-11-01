@@ -1,0 +1,21 @@
+﻿2017/10/20 13:22:34 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\workspace\Voice_out\build\src\voice_outputcomp.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "voice_outputcomp.dir\Release\voice_outputcomp.unsuccessfulbuild" を作成しています。
+       CustomBuild:
+         すべての出力が最新のものです。
+       ClCompile:
+         すべての出力が最新のものです。
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\workspace\Voice_out\build\src\Release\voice_outputcomp.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1/bin" /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1/bin/Release" /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32" /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32/Release" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib Release\voice_output.lib RTC110.lib coil110.lib omniORB415_rt.lib omniDynamic415_rt.lib omnithread34_rt.lib advapi32.lib ws2_32.lib mswsock.lib /MANIFEST /ManifestFile:"voice_outputcomp.dir\Release\voice_outputcomp.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:/workspace/Voice_out/build/src/Release/voice_outputcomp.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/workspace/Voice_out/build/src/Release/voice_outputcomp.lib" /MACHINE:X86 voice_outputcomp.dir\Release\Voice_outputComp.obj  /machine:X86 
+         voice_outputcomp.vcxproj -> C:\workspace\Voice_out\build\src\Release\voice_outputcomp.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\workspace\Voice_out\build\src\Release\voice_outputcomp.exe;#1" /manifest voice_outputcomp.dir\Release\voice_outputcomp.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         ファイル "voice_outputcomp.dir\Release\voice_outputcomp.unsuccessfulbuild" を削除しています。
+         "voice_outputcomp.dir\Release\voice_outputcomp.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "C:\workspace\Voice_out\build\src\voice_outputcomp.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:00.42

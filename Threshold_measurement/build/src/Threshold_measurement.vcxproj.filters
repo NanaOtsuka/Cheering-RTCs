@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\workspace\Threshold_measurement\src\Threshold_measurement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\workspace\Threshold_measurement\include\Threshold_measurement\Threshold_measurement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F76564F9-7D79-390E-A275-B9DB3C56BB15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{29A177B6-35C2-35E0-A9AA-0BEF0A940307}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

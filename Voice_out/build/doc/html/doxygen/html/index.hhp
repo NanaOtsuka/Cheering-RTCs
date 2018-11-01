@@ -1,0 +1,52 @@
+[OPTIONS]
+Compiled file=Voice_output-1.0.chm
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=Voice_output
+
+[WINDOWS]
+main="Voice_output","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+_voice__output_8h_source.html
+_voice__output_8h.html
+class_voice__output.html
+class_voice__output-members.html
+graph_legend.html
+dir_d44c64559bbebec7f509842c48db8b23.html
+dir_af5ff1b391f7d7fa5174df450ae65a48.html
+index.html
+annotated.html
+classes.html
+hierarchy.html
+inherits.html
+functions.html
+functions_func.html
+functions_vars.html
+files.html
+globals.html
+globals_func.html
+globals_defs.html
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png
+doxygen.png
+closed.png
+open.png
+bdwn.png
+sync_on.png
+sync_off.png
+_voice__output_8h__incl.png
+class_voice__output__inherit__graph.png
+class_voice__output__coll__graph.png
+graph_legend.png
+inherit_graph_0.png

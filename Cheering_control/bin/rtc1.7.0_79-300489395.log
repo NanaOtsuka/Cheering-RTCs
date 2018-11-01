@@ -1,0 +1,12 @@
+Oct 29 20:51:45.404 Manager INFO     : 1.1.0
+Oct 29 20:51:45.405 Manager INFO     : Copyright (C) 2003-2008
+Oct 29 20:51:45.405 Manager INFO     :   Noriaki Ando
+Oct 29 20:51:45.405 Manager INFO     :   Task-intelligence Research Group,
+Oct 29 20:51:45.406 Manager INFO     :   Intelligent Systems Research Institute, AIST
+Oct 29 20:51:45.406 Manager INFO     : Manager starting.
+Oct 29 20:51:45.406 Manager INFO     : Starting local logging.
+Oct 29 20:51:45.509 NamingManager INFO     : NameServer connection succeeded: corba/localhost:2809
+Oct 29 20:51:46.622 ManagerServant INFO     : Master manager not found.
+Oct 29 20:51:46.627 LocalServiceAdmin INFO     : All the local services are enabled.
+Oct 29 20:51:46.744 RTObject_impl INFO     : 1 execution contextwas created.
+Oct 29 20:51:46.804 RTObject_impl INFO     : Initial active configuration set is default-set.

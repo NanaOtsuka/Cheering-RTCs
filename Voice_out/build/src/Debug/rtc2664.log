@@ -1,0 +1,25 @@
+[0m[34mOct 30 08:39:35.634 INFO: manager: [0m1.1.2
+[0m[34mOct 30 08:39:35.635 INFO: manager: [0mCopyright (C) 2003-2014
+[0m[34mOct 30 08:39:35.635 INFO: manager: [0m  Noriaki Ando
+[0m[34mOct 30 08:39:35.635 INFO: manager: [0m  Intelligent Systems Research Institute, AIST
+[0m[34mOct 30 08:39:35.635 INFO: manager: [0mManager starting.
+[0m[34mOct 30 08:39:35.635 INFO: manager: [0mStarting local logging.
+[0m[34mOct 30 08:39:35.670 INFO: NamingOnCorba: [0mEndpoint for the CORBA naming service (localhost) is 127.0.0.1.
+[0m[34mOct 30 08:39:35.670 INFO: NamingManager: [0mNameServer connection succeeded: corba/localhost
+[0m[34mOct 30 08:39:37.699 INFO: ManagerServant: [0mMaster manager not found
+[0m[33mOct 30 08:40:34.133 WARNING: SdoServiceAdmin: [0mNo available SDO service in the factory: 
+[0m[33mOct 30 08:40:34.134 WARNING: SdoServiceAdmin: [0mNo available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+[0m[33mOct 30 08:47:48.699 WARNING: Voice: [0mDead connection: b81f3f37-dd6b-4624-8eaf-b21d60b686ef
+[0m[33mOct 30 08:47:49.999 WARNING: Voice: [0mException caught: minor code(1096024066).
+[0m[33mOct 30 08:57:19.811 WARNING: Voice: [0mDead connection: 58a12bd0-c8bf-4806-a0af-90dc0c1a6d61
+[0m[33mOct 30 08:57:20.917 WARNING: Voice: [0mException caught: minor code(1096024066).
+[0m[33mOct 30 08:58:33.179 WARNING: Voice: [0mDead connection: f93b0c06-9a63-424d-a3a4-21014def1078
+[0m[33mOct 30 08:58:34.181 WARNING: Voice: [0mException caught: minor code(1096024066).
+[0m[33mOct 30 09:01:41.060 WARNING: Voice: [0mDead connection: cbaf1e1f-9b8e-403f-8e61-5934860cfa67
+[0m[33mOct 30 09:01:42.062 WARNING: Voice: [0mException caught: minor code(1096024066).
+[0m[33mOct 30 09:04:40.979 WARNING: Voice: [0mDead connection: b7792a94-e541-4960-8d39-7acf4dfcd9f2
+[0m[33mOct 30 09:04:41.981 WARNING: Voice: [0mException caught: minor code(1096024066).
+[0m[33mOct 30 09:13:05.596 WARNING: Voice: [0mDead connection: e3a25d0b-6e29-488b-bb3e-711095d0a145
+[0m[33mOct 30 09:13:06.752 WARNING: Voice: [0mException caught: minor code(1096024066).
+[0m[33mOct 30 09:14:11.526 WARNING: Voice: [0mDead connection: 6aa24934-d906-4606-801d-431d79580516
+[0m[33mOct 30 09:14:12.528 WARNING: Voice: [0mException caught: minor code(1096024066).

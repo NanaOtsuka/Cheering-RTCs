@@ -1,0 +1,54 @@
+# Cheering_control CMake config file
+#
+# This file sets the following variables:
+# Cheering_control_FOUND - Always TRUE.
+# Cheering_control_INCLUDE_DIRS - Directories containing the Cheering_control include files.
+# Cheering_control_IDL_DIRS - Directories containing the Cheering_control IDL files.
+# Cheering_control_LIBRARIES - Libraries needed to use Cheering_control.
+# Cheering_control_DEFINITIONS - Compiler flags for Cheering_control.
+# Cheering_control_VERSION - The version of Cheering_control found.
+# Cheering_control_VERSION_MAJOR - The major version of Cheering_control found.
+# Cheering_control_VERSION_MINOR - The minor version of Cheering_control found.
+# Cheering_control_VERSION_REVISION - The revision version of Cheering_control found.
+# Cheering_control_VERSION_CANDIDATE - The candidate version of Cheering_control found.
+
+message(STATUS "Found Cheering_control-@PROJECT_VERSION@")
+set(Cheering_control_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(Cheering_control_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(Cheering_control_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(Cheering_control_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(Cheering_control_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(Cheering_control_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(Cheering_control_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(Cheering_control_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(Cheering_control_VERSION @PROJECT_VERSION@)
+set(Cheering_control_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(Cheering_control_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(Cheering_control_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(Cheering_control_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

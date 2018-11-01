@@ -1,0 +1,32 @@
+Oct 30 18:54:55.939 Manager INFO     : 1.1.0
+Oct 30 18:54:55.939 Manager INFO     : Copyright (C) 2003-2008
+Oct 30 18:54:55.943 Manager INFO     :   Noriaki Ando
+Oct 30 18:54:55.943 Manager INFO     :   Task-intelligence Research Group,
+Oct 30 18:54:55.943 Manager INFO     :   Intelligent Systems Research Institute, AIST
+Oct 30 18:54:55.943 Manager INFO     : Manager starting.
+Oct 30 18:54:55.943 Manager INFO     : Starting local logging.
+Oct 30 18:54:56.115 NamingManager INFO     : NameServer connection succeeded: corba/localhost:2809
+Oct 30 18:54:57.284 ManagerServant INFO     : Master manager not found.
+Oct 30 18:54:57.300 LocalServiceAdmin INFO     : All the local services are enabled.
+Oct 30 18:54:57.634 RTObject_impl INFO     : 1 execution contextwas created.
+Oct 30 18:54:57.686 RTObject_impl INFO     : Initial active configuration set is default-set.
+Oct 30 19:15:34.126 SdoServiceAdmin WARN     : No available SDO service in the factory: 
+Oct 30 19:15:34.129 SdoServiceAdmin WARN     : No available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+Oct 30 19:32:03.854 Training_start WARN     : Exception caught: minor code.1398079689
+Oct 30 19:32:05.123 Training_start WARN     : Dead connection:f06b3112-cacc-440c-b8a1-810e3985467a
+Oct 30 19:32:05.123 Training_start ERROR    : Invalid connector id: f06b3112-cacc-440c-b8a1-810e3985467a
+Oct 30 19:50:24.822 Training_start WARN     : Exception caught: minor code.1398079689
+Oct 30 19:50:26.015 Training_start WARN     : Dead connection:0148c7f0-e9f6-4946-a9b0-ebb26328f89b
+Oct 30 19:50:26.015 Training_start ERROR    : Invalid connector id: 0148c7f0-e9f6-4946-a9b0-ebb26328f89b
+Oct 30 19:53:23.101 Training_start WARN     : Exception caught: minor code.1398079689
+Oct 30 19:53:24.236 Training_start WARN     : Dead connection:432f448a-eafc-4c4a-ab27-5c6cf66b0894
+Oct 30 19:53:24.236 Training_start ERROR    : Invalid connector id: 432f448a-eafc-4c4a-ab27-5c6cf66b0894
+Oct 30 20:08:16.254 Training_start WARN     : Exception caught: minor code.1398079689
+Oct 30 20:08:17.344 count WARN     : Dead connection:f59959e3-36ba-4ee0-9875-5306baf7c33a
+Oct 30 20:08:18.452 count WARN     : Exception caught: minor code(1398079689).org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 201  completed: No
+Oct 30 20:17:12.579 count WARN     : Dead connection:f00924b9-46a4-431b-8cf3-b808cf16c379
+Oct 30 20:17:13.759 count WARN     : Exception caught: minor code(1398079689).org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 201  completed: No
+Oct 30 20:17:15.035 Training_start WARN     : Exception caught: minor code.1398079689
+Oct 30 20:52:55.061 Threshold_measurement_start WARN     : Exception caught: minor code.1398079689
+Oct 30 20:52:55.064 Training_start WARN     : Exception caught: minor code.1398079689
+Oct 30 20:52:55.066 Training_start WARN     : Exception caught: minor code.1398079689

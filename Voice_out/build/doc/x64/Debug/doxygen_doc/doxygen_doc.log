@@ -1,0 +1,42 @@
+﻿2018/08/23 18:20:47 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\workspace\Voice_out\build\doc\doxygen_doc.vcxproj" (Build ターゲット)。
+     1>CUSTOMBUILD : warning : Tag `SYMBOL_CACHE_SIZE' at line 48 of file `C:/workspace/Voice_out/build/doc/doxyfile' has become obsolete.
+                  To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+     1>CUSTOMBUILD : warning : Tag `SHOW_DIRECTORIES' at line 81 of file `C:/workspace/Voice_out/build/doc/doxyfile' has become obsolete.
+                  To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+     1>CUSTOMBUILD : warning : Tag `HTML_ALIGN_MEMBERS' at line 153 of file `C:/workspace/Voice_out/build/doc/doxyfile' has become obsolete.
+                  To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+     1>CUSTOMBUILD : warning : Tag `USE_INLINE_TREES' at line 180 of file `C:/workspace/Voice_out/build/doc/doxyfile' has become obsolete.
+                  To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+     1>CUSTOMBUILD : warning : Tag `XML_SCHEMA' at line 228 of file `C:/workspace/Voice_out/build/doc/doxyfile' has become obsolete.
+                  To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+     1>CUSTOMBUILD : warning : Tag `XML_DTD' at line 229 of file `C:/workspace/Voice_out/build/doc/doxyfile' has become obsolete.
+                  To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+     1>CUSTOMBUILD : error : When enabling GENERATE_HTMLHELP the search engine (SEARCHENGINE) should be disabled. I'll do it for you.
+     1>CUSTOMBUILD : warning : doxygen no longer ships with the FreeSans font.
+         You may want to clear or change DOT_FONTNAME.
+         Otherwise you run the risk that the wrong font is being used for dot generated graphs.
+     1>CUSTOMBUILD : error : Problems running dot: exit code=-1, command='dot', arguments='"C:/workspace/Voice_out/build/doc/html/doxygen/html/class_voice__output__coll__graph.dot" -Tpng -o "C:/workspace/Voice_out/build/doc/html/doxygen/html/class_voice__output__coll__graph.png"'
+     1>CUSTOMBUILD : error : Problems running dot: exit code=-1, command='dot', arguments='"C:/workspace/Voice_out/build/doc/html/doxygen/html/inherit_graph_0.dot" -Tpng -o "C:/workspace/Voice_out/build/doc/html/doxygen/html/inherit_graph_0.png"'
+     1>CUSTOMBUILD : error : Problems running dot: exit code=-1, command='dot', arguments='"C:/workspace/Voice_out/build/doc/html/doxygen/html/graph_legend.dot" -Tpng -o "C:/workspace/Voice_out/build/doc/html/doxygen/html/graph_legend.png"'
+     1>CUSTOMBUILD : error : Problems running dot: exit code=-1, command='dot', arguments='"C:/workspace/Voice_out/build/doc/html/doxygen/html/class_voice__output__inherit__graph.dot" -Tpng -o "C:/workspace/Voice_out/build/doc/html/doxygen/html/class_voice__output__inherit__graph.png"'
+     1>CUSTOMBUILD : error : Problems running dot: exit code=-1, command='dot', arguments='"C:/workspace/Voice_out/build/doc/html/doxygen/html/_voice__output_8h__incl.dot" -Tpng -o "C:/workspace/Voice_out/build/doc/html/doxygen/html/_voice__output_8h__incl.png"'
+     1>CUSTOMBUILD : error : problems opening map file C:/workspace/Voice_out/build/doc/html/doxygen/html/_voice__output_8h__incl.map for inclusion in the docs!
+         If you installed Graphviz/dot after a previous failing run, 
+         try deleting the output directory and rerun doxygen.
+     1>CUSTOMBUILD : error : problems opening map file C:/workspace/Voice_out/build/doc/html/doxygen/html/class_voice__output__inherit__graph.map for inclusion in the docs!
+         If you installed Graphviz/dot after a previous failing run, 
+         try deleting the output directory and rerun doxygen.
+     1>CUSTOMBUILD : error : problems opening map file C:/workspace/Voice_out/build/doc/html/doxygen/html/class_voice__output__coll__graph.map for inclusion in the docs!
+         If you installed Graphviz/dot after a previous failing run, 
+         try deleting the output directory and rerun doxygen.
+     1>CUSTOMBUILD : error : problems opening map file C:/workspace/Voice_out/build/doc/html/doxygen/html/inherit_graph_0.map for inclusion in the docs!
+         If you installed Graphviz/dot after a previous failing run, 
+         try deleting the output directory and rerun doxygen.
+         Building Custom Rule C:/workspace/Voice_out/doc/CMakeLists.txt
+         CMake does not need to re-run because C:/workspace/Voice_out/build/doc/CMakeFiles/generate.stamp is up-to-date.
+     1>プロジェクト "C:\workspace\Voice_out\build\doc\doxygen_doc.vcxproj" (Build ターゲット) のビルドが終了しました -- 失敗。
+
+ビルドに失敗しました。
+
+経過時間 00:00:01.10
