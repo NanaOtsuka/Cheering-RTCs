@@ -238,16 +238,13 @@ class Count
 
   // DataInPort declaration
   // <rtc-template block="inport_declare">
-  RTC::TimedDoubleSeq m_gainer; //gainer読み込み
+  RTC::TimedDoubleSeq m_gainer; //圧力センサ読み込み
   InPort<RTC::TimedDoubleSeq> m_gainerIn;
  
-  RTC::TimedFloat m_threshold; //閾値読み込み
+  RTC::TimedFloat m_threshold; //閾値
   InPort<RTC::TimedFloat> m_thresholdIn;
  
-  RTC::TimedLong m_sign;
-  InPort<RTC::TimedLong> m_signIn;
-
-  RTC::TimedLong m_firstcou;
+  RTC::TimedLong m_firstcou; //立ち上がり回数設定
   InPort<TimedLong>m_firstcouIn;
   
   // </rtc-template>
@@ -256,10 +253,7 @@ class Count
   // DataOutPort declaration
   // <rtc-template block="outport_declare">
   RTC::TimedLong m_count; 
-  OutPort<RTC::TimedLong> m_countOut; //カウント回数
-  
-  //RTC::TimedLong m_first; //立ち上がり回数
-  //OutPort<RTC::TimedLong> m_firstOut;
+  OutPort<RTC::TimedLong> m_countOut; //立ち上がり回数
   
   // </rtc-template>
 

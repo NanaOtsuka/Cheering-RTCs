@@ -1,4 +1,4 @@
-﻿2018/10/31 1:45:32 にビルドを開始しました。
+﻿2018/11/12 14:23:42 にビルドを開始しました。
      1>ノード 3 上のプロジェクト "C:\workspace\Count\build\src\Count.vcxproj" (Build ターゲット)。
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\workspace\Count\include /IC:\workspace\Count\include\Count /IC:\workspace\Count\build /IC:\workspace\Count\build\idl /I"C:\Program Files (x86)\OpenRTM-aist\1.1.2" /I"C:\Program Files (x86)\OpenRTM-aist\1.1.2\rtm\idl" /I"C:\Program Files (x86)\OpenRTM-aist\1.1.2\rtm\ext" /I"C:\Program Files (x86)\OpenRTM-aist\1.1.2\omniORB\4.2.1_vc12\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D __WIN32__ /D __x86__ /D __NT__ /D __OSVERSION__=4 /D _CRT_SECURE_NO_DEPRECATE /D INCLUDE_stub_in_nt_dll /D RTC_CORBA_CXXMAPPING11 /D _WIN32_WINNT=0x0500 /D "CMAKE_INTDIR=\"Debug\"" /D Count_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Count.dir\Debug\\" /Fd"Count.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt C:\workspace\Count\src\Count.cpp
@@ -73,10 +73,10 @@
      1>C:\Program Files (x86)\OpenRTM-aist\1.1.2\rtm/OutPortBase.h(777): warning C4290: C++ の例外の指定は無視されます。関数が __declspec(nothrow) でないことのみ表示されます。
      1>C:\Program Files (x86)\OpenRTM-aist\1.1.2\coil/OS.h(92): warning C4996: 'GetVersionExA': が古い形式として宣言されました。
                  C:\Program Files (x86)\Windows Kits\8.1\Include\um\sysinfoapi.h(433) : 'GetVersionExA' の宣言を確認してください。
-     1>C:\workspace\Count\src\Count.cpp(198): warning C4244: '=' : 'CORBA::Double' から 'float' への変換です。データが失われる可能性があります。
-     1>C:\workspace\Count\src\Count.cpp(199): warning C4244: '=' : 'CORBA::Double' から 'float' への変換です。データが失われる可能性があります。
-     1>C:\workspace\Count\src\Count.cpp(200): warning C4244: '=' : 'CORBA::Double' から 'float' への変換です。データが失われる可能性があります。
-     1>C:\workspace\Count\src\Count.cpp(208): warning C4244: '=' : 'clock_t' から 'float' への変換です。データが失われる可能性があります。
+     1>C:\workspace\Count\src\Count.cpp(168): warning C4244: '=' : 'CORBA::Double' から 'float' への変換です。データが失われる可能性があります。
+     1>C:\workspace\Count\src\Count.cpp(169): warning C4244: '=' : 'CORBA::Double' から 'float' への変換です。データが失われる可能性があります。
+     1>C:\workspace\Count\src\Count.cpp(170): warning C4244: '=' : 'CORBA::Double' から 'float' への変換です。データが失われる可能性があります。
+     1>C:\workspace\Count\src\Count.cpp(173): warning C4244: '=' : 'clock_t' から 'float' への変換です。データが失われる可能性があります。
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\workspace\Count\build\src\Debug\Count.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1.2/bin/vc12" /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1.2/bin/vc12/Debug" /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1.2/omniORB/4.2.1_vc12/lib/x86_win32" /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1.2/omniORB/4.2.1_vc12/lib/x86_win32/Debug" RTC112_vc12d.lib coil112_vc12d.lib omniORB421_rtd.lib omniDynamic421_rtd.lib omnithread40_rtd.lib advapi32.lib ws2_32.lib mswsock.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/workspace/Count/build/src/Debug/Count.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/workspace/Count/build/src/Debug/Count.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /DLL Count.dir\Debug\Count.obj
          Count.vcxproj -> C:\workspace\Count\build\src\Debug\Count.dll
@@ -84,4 +84,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:03.87
+経過時間 00:00:03.51

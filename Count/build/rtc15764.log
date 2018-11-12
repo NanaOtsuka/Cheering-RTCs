@@ -1,0 +1,7 @@
+[0m[34mNov 12 05:23:50.022 INFO: manager: [0m1.1.2
+[0m[34mNov 12 05:23:50.022 INFO: manager: [0mCopyright (C) 2003-2014
+[0m[34mNov 12 05:23:50.022 INFO: manager: [0m  Noriaki Ando
+[0m[34mNov 12 05:23:50.022 INFO: manager: [0m  Intelligent Systems Research Institute, AIST
+[0m[34mNov 12 05:23:50.022 INFO: manager: [0mManager starting.
+[0m[34mNov 12 05:23:50.022 INFO: manager: [0mStarting local logging.
+[0m[34mNov 12 05:23:52.115 INFO: NamingManager: [0mNameServer connection failed: corba/localhost
