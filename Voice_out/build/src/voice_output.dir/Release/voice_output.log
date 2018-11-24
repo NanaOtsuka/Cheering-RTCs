@@ -1,0 +1,92 @@
+﻿2017/10/20 13:22:32 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\workspace\Voice_out\build\src\voice_output.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "voice_output.dir\Release\voice_output.unsuccessfulbuild" を作成しています。
+       CustomBuild:
+         すべての出力が最新のものです。
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\workspace\Voice_out\include /IC:\workspace\Voice_out\include\Voice_output /IC:\workspace\Voice_out\build /IC:\workspace\Voice_out\build\idl /I"C:\Program Files (x86)\OpenRTM-aist\1.1" /I"C:\Program Files (x86)\OpenRTM-aist\1.1\rtm\idl" /I"C:\Program Files (x86)\OpenRTM-aist\1.1\omniORB\4.1.5\include" /I"C:\Program Files (x86)\OpenRTM-aist\1.1\OpenCV2.3\include\opencv2" /I"C:\Program Files (x86)\OpenRTM-aist\1.1\OpenCV2.3\include" /I"C:\Program Files (x86)\OpenRTM-aist\1.1\OpenCV2.3\include\opencv" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D __WIN32__ /D __x86__ /D __NT__ /D __OSVERSION__=4 /D _CRT_SECURE_NO_DEPRECATE /D INCLUDE_stub_in_nt_dll /D RTC_CORBA_CXXMAPPING11 /D _WIN32_WINNT=0x0500 /D "CMAKE_INTDIR=\"Release\"" /D voice_output_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"voice_output.dir\Release\\" /Fd"voice_output.dir\Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\Voice_output.cpp
+         Voice_output.cpp
+     1>..\..\src\Voice_output.cpp : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+     1>C:\workspace\Voice_out\include\Voice_output\Voice_output.h : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+     1>C:\Program Files (x86)\OpenRTM-aist\1.1\rtm/InPortBase.h(599): warning C4290: C++ の例外の指定は無視されます。関数が __declspec(nothrow) でないことのみ表示されます。
+     1>C:\Program Files (x86)\OpenRTM-aist\1.1\rtm/InPortConsumer.h(258): warning C4231: 非標準の拡張機能が使用されています : 'extern' がテンプレートの明示的なインスタンス生成の前に見つかりました。
+     1>C:\Program Files (x86)\OpenRTM-aist\1.1\coil/Factory.h(424): warning C4251: 'coil::Factory<AbstractClass,Identifier,Compare,Creator,Destructor>::m_creators' : class 'std::map<_Kty,_Ty>' は __export キーワードを使って class 'coil::Factory<AbstractClass,Identifier,Compare,Creator,Destructor>' にエクスポートしてください。
+                 with
+                 [
+                     AbstractClass=RTC::InPortConsumer,
+                     Identifier=std::string,
+                     Compare=std::less<std::string>,
+                     Creator=RTC::InPortConsumer *(__cdecl *)(void),
+                     Destructor=void (__cdecl *)(RTC::InPortConsumer *&)
+                 ]
+                 and
+                 [
+                     _Kty=std::string,
+                     _Ty=coil::Factory<RTC::InPortConsumer,std::string,std::less<std::string>,RTC::InPortConsumer *(__cdecl *)(void),void (__cdecl *)(RTC::InPortConsumer *&)>::FactoryEntry
+                 ]
+                 and
+                 [
+                     AbstractClass=RTC::InPortConsumer,
+                     Identifier=std::string,
+                     Compare=std::less<std::string>,
+                     Creator=RTC::InPortConsumer *(__cdecl *)(void),
+                     Destructor=void (__cdecl *)(RTC::InPortConsumer *&)
+                 ]
+                 C:\Program Files (x86)\OpenRTM-aist\1.1\rtm/InPortConsumer.h(258) : コンパイルされたクラスの テンプレート のインスタンス化 'coil::GlobalFactory<AbstractClass>' の参照を確認してください
+                 with
+                 [
+                     AbstractClass=RTC::InPortConsumer
+                 ]
+     1>C:\Program Files (x86)\OpenRTM-aist\1.1\rtm/OutPortProvider.h(551): warning C4231: 非標準の拡張機能が使用されています : 'extern' がテンプレートの明示的なインスタンス生成の前に見つかりました。
+     1>C:\Program Files (x86)\OpenRTM-aist\1.1\coil/Factory.h(424): warning C4251: 'coil::Factory<AbstractClass,Identifier,Compare,Creator,Destructor>::m_creators' : class 'std::map<_Kty,_Ty>' は __export キーワードを使って class 'coil::Factory<AbstractClass,Identifier,Compare,Creator,Destructor>' にエクスポートしてください。
+                 with
+                 [
+                     AbstractClass=RTC::OutPortProvider,
+                     Identifier=std::string,
+                     Compare=std::less<std::string>,
+                     Creator=RTC::OutPortProvider *(__cdecl *)(void),
+                     Destructor=void (__cdecl *)(RTC::OutPortProvider *&)
+                 ]
+                 and
+                 [
+                     _Kty=std::string,
+                     _Ty=coil::Factory<RTC::OutPortProvider,std::string,std::less<std::string>,RTC::OutPortProvider *(__cdecl *)(void),void (__cdecl *)(RTC::OutPortProvider *&)>::FactoryEntry
+                 ]
+                 and
+                 [
+                     AbstractClass=RTC::OutPortProvider,
+                     Identifier=std::string,
+                     Compare=std::less<std::string>,
+                     Creator=RTC::OutPortProvider *(__cdecl *)(void),
+                     Destructor=void (__cdecl *)(RTC::OutPortProvider *&)
+                 ]
+                 C:\Program Files (x86)\OpenRTM-aist\1.1\rtm/OutPortProvider.h(551) : コンパイルされたクラスの テンプレート のインスタンス化 'coil::GlobalFactory<AbstractClass>' の参照を確認してください
+                 with
+                 [
+                     AbstractClass=RTC::OutPortProvider
+                 ]
+     1>C:\Program Files (x86)\OpenRTM-aist\1.1\rtm/OutPortBase.h(777): warning C4290: C++ の例外の指定は無視されます。関数が __declspec(nothrow) でないことのみ表示されます。
+     1>c:\program files (x86)\openrtm-aist\1.1\opencv2.3\include\opencv\opencv2/flann/flann.hpp(233): warning C4996: 'cv::flann::Index_<T>': が古い形式として宣言されました。
+                 c:\program files (x86)\openrtm-aist\1.1\opencv2.3\include\opencv\opencv2/flann/flann.hpp(278) : コンパイルされたクラスの テンプレート のインスタンス化 'cv::flann::Index_<T>' の参照を確認してください
+     1>c:\program files (x86)\openrtm-aist\1.1\opencv2.3\include\opencv\opencv2/legacy/compat.hpp : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+     1>C:\workspace\Voice_out\include\Voice_output\Voice_output.h(42): warning C4005: 'FILENAME' : マクロが再定義されました。
+                 C:\workspace\Voice_out\include\Voice_output\Voice_output.h(41) : 'FILENAME' の前の定義を確認してください
+     1>C:\workspace\Voice_out\include\Voice_output\Voice_output.h(43): warning C4005: 'FILENAME' : マクロが再定義されました。
+                 C:\workspace\Voice_out\include\Voice_output\Voice_output.h(42) : 'FILENAME' の前の定義を確認してください
+     1>C:\workspace\Voice_out\include\Voice_output\Voice_output.h(44): warning C4005: 'FILENAME' : マクロが再定義されました。
+                 C:\workspace\Voice_out\include\Voice_output\Voice_output.h(43) : 'FILENAME' の前の定義を確認してください
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\workspace\Voice_out\build\src\Release\voice_output.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1/bin" /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1/bin/Release" /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32" /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32/Release" /LIBPATH:"C:\Program Files (x86)\OpenRTM-aist\1.1\OpenCV2.3\lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib RTC110.lib coil110.lib omniORB415_rt.lib omniDynamic415_rt.lib omnithread34_rt.lib ws2_32.lib mswsock.lib opencv_calib3d231.lib opencv_contrib231.lib opencv_core231d.lib opencv_features2d231.lib opencv_flann231.lib opencv_gpu231.lib opencv_haartraining_engine.lib opencv_highgui231d.lib opencv_imgproc231d.lib opencv_legacy231.lib opencv_ml231.lib opencv_objdetect231d.lib opencv_objdetect231.lib opencv_ts231.lib opencv_video231.lib /MANIFEST /ManifestFile:"voice_output.dir\Release\voice_output.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:/workspace/Voice_out/build/src/Release/voice_output.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/workspace/Voice_out/build/src/Release/voice_output.lib" /MACHINE:X86 /DLL voice_output.dir\Release\Voice_output.obj  /machine:X86 
+            ライブラリ C:/workspace/Voice_out/build/src/Release/voice_output.lib とオブジェクト C:/workspace/Voice_out/build/src/Release/voice_output.exp を作成中
+         voice_output.vcxproj -> C:\workspace\Voice_out\build\src\Release\voice_output.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\workspace\Voice_out\build\src\Release\voice_output.dll;#2" /manifest voice_output.dir\Release\voice_output.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         ファイル "voice_output.dir\Release\voice_output.unsuccessfulbuild" を削除しています。
+         "voice_output.dir\Release\voice_output.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "C:\workspace\Voice_out\build\src\voice_output.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:02.72

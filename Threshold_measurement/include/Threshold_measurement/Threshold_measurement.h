@@ -272,6 +272,9 @@ class Threshold_measurement
   // <rtc-template block="private_operation">
   
   // </rtc-template>
+	 float gai[8];////圧力センサ値記録用配列
+
+	
 
 };
 

@@ -241,10 +241,10 @@ class Count
   RTC::TimedDoubleSeq m_gainer; //圧力センサ読み込み
   InPort<RTC::TimedDoubleSeq> m_gainerIn;
  
-  RTC::TimedFloat m_threshold; //閾値
+  RTC::TimedFloat m_threshold; //閾値取得
   InPort<RTC::TimedFloat> m_thresholdIn;
  
-  RTC::TimedLong m_firstcou; //立ち上がり回数設定
+  RTC::TimedLong m_firstcou; //トレーニング回数設定
   InPort<TimedLong>m_firstcouIn;
   
   // </rtc-template>
@@ -280,7 +280,11 @@ class Count
   // <rtc-template block="private_operation">
   
   // </rtc-template>
+	 float gai[8];//圧力センサ値記録用配列
+	 float clk;  //時間
+	 int cou; //カウント
 
+	 
 };
 
 

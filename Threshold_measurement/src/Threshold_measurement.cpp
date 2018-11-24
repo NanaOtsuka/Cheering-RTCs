@@ -14,7 +14,12 @@
 #include<fstream>
 #include<string>
 
-float gai[8] = { 0.0 };
+//閾値計算用配列
+float data3[5000] = { 0.0 };//左FSR-408手前
+float data4[5000] = { 0.0 };//左FSR-408真上
+float data5[5000] = { 0.0 };//左FSR-408奥
+
+
 
 // Module specification
 // <rtc-template block="module_spec">
@@ -110,11 +115,15 @@ RTC::ReturnCode_t Threshold_measurement::onActivated(RTC::UniqueId ec_id)
 {
 	std::cout << "------Activate------" << std::endl;
 
+	
+	//csvファイルに圧力センサ値を記録する
 	FILE *fp1;
 	fp1 = fopen("Threshold measurement.csv", "w");
-
-	fprintf(fp1, "ain3[N],ain4[N],ain5[N]\n", gai[3], gai[4], gai[5]);
+	fprintf(fp1, "gai3[N],gai4[N],gai5[N]\n", gai[3], gai[4], gai[5]);
 	fclose(fp1);
+	//初期化
+	gai[8] = { 0.0 };//記録用配列
+	
 
   return RTC::RTC_OK;
 }
@@ -122,47 +131,51 @@ RTC::ReturnCode_t Threshold_measurement::onActivated(RTC::UniqueId ec_id)
 
 RTC::ReturnCode_t Threshold_measurement::onDeactivated(RTC::UniqueId ec_id)
 {
-  return RTC::RTC_OK;
+	
+	
+	return RTC::RTC_OK;
 }
 
 
 RTC::ReturnCode_t Threshold_measurement::onExecute(RTC::UniqueId ec_id)
 {
-	float data3[9999] = { 0.0 };
-	float data4[9999] = { 0.0 };
-	float data5[9999] = { 0.0 };
-	float threshold = 0;
-	int th_i = 1;
-	float max = 0;
+	//閾値計算用配列
+	data3[5000] = { 0.0 };//左FSR-408手前
+	data4[5000] = { 0.0 };//左FSR-408真上
+	data5[5000] = { 0.0 };//左FSR-408奥
+	
+	float threshold = 0;//閾値用変数
+	int th_i = 1;//配列番号
+	float max = 0;//閾値変換用変数
 	float max3 = 0;
 	float max4 = 0;
 	float max5 = 0;
-	int sign;
+	int sign;//GUIの閾値測定に関するボタンが押されると値が変化する
 
 	//測定開始・終了タイミングの決定
 	    m_signIn.isNew();
 		m_signIn.read();
 		sign = m_sign.data;
 
-		//閾値計算用データ測定
+		//閾値計算用データ測定(GUIの「測定開始」ボタンが押されたとき)
 		if (sign == 1&&threshold==0){
 			
 				std::cout << sign << std::endl;
 
 						m_gainer2In.isNew();
 						m_gainer2In.read();
-						//データ保存用
+						//データ保存用配列
 						gai[3] = m_gainer2.data[3];
 						gai[4] = m_gainer2.data[4];
 						gai[5] = m_gainer2.data[5];
-						//閾値計算用
+						//閾値計算用配列
 						data3[th_i] = m_gainer2.data[3];
 						data4[th_i] = m_gainer2.data[4];
 						data5[th_i] = m_gainer2.data[5];
-						//配列用		
+						//配列番号を増やす
 						++th_i;
 
-						//記録用ファイル生成
+						//記録用ファイルに書き込む
 						FILE *fp1;
 						fp1 = fopen("Threshold measurement.csv", "a");
 						fprintf(fp1, "%3.3f,%3.3f,%3.3f\n",  gai[3], gai[4], gai[5]);
@@ -170,13 +183,14 @@ RTC::ReturnCode_t Threshold_measurement::onExecute(RTC::UniqueId ec_id)
 
 
 		};
-		//閾値計算
+		//閾値計算(GUIの「測定終了」ボタンが押されとき)
 	  if (sign == 2){
 
+		  //各センサで測定値の最大値を求める
 		  for (int i = 0; i <= th_i; i++){
 
 			  if (max3 < data3[i])max3 = data3[i];
-
+			  
 
 		  }
 
@@ -194,23 +208,25 @@ RTC::ReturnCode_t Threshold_measurement::onExecute(RTC::UniqueId ec_id)
 
 		  }
 
+		  //すべての測定値の最大値を求める
 			max = max3;
 			if (max4 > max)max = max4;
 			if (max5 > max)max = max5;
 
-		  	//閾値計算
+		  	//閾値計算(測定値の最大値の70％を閾値とした)
 		  	threshold = max*0.70;
 		  	printf("\rthreshold = %3.3f\n", threshold);
 		  	m_threshold.data = threshold;
 		  	m_thresholdOut.write();
 	  };
 
-	  //リセット
+	  //リセット(GUIの「リセット」ボタンが押されとき)
 	  if (sign == 3){
+		  //初期化
 		    th_i = 1;
-		    data3[9999] = { 0.0 };
-		    data4[9999] = { 0.0 };
-		    data5[9999] = { 0.0 };
+		    data3[5000] = { 0.0 };
+		    data4[5000] = { 0.0 };
+		    data5[5000] = { 0.0 };
 			max = 0;
 			max3 = 0;
 			max4 = 0;
@@ -220,7 +236,8 @@ RTC::ReturnCode_t Threshold_measurement::onExecute(RTC::UniqueId ec_id)
 		  	m_threshold.data = threshold;
 		  	m_thresholdOut.write();
 	  };
-	  
+	 
+	 
   return RTC::RTC_OK;
 }
 

@@ -12,9 +12,11 @@
 #include <math.h>
 #include <time.h>
 
-float gai[8] = { 0.0 };
-float clk;  //時間
-int cou = 0; //カウント
+//動作検知用配列
+//初期化
+float data3[9999] = { 0.0 };  //左FSR-408手前
+float data4[9999] = { 0.0 };  //左FSR-408真上
+float data5[9999] = { 0.0 };  //左FSR-408奥
 
 // Module specification
 // <rtc-template block="module_spec">
@@ -114,33 +116,37 @@ RTC::ReturnCode_t Count::onActivated(RTC::UniqueId ec_id)
 	//csvファイルに圧力センサ値を記録する
 	FILE *fp2;
 	fp2 = fopen("Count.csv", "w");
-
-	fprintf(fp2, "Time[s],ain0[N],ain3[N],ain4[N],ain5[N],ain6[N],ain7[N],count\n", clk, gai[0], gai[3], gai[4], gai[5], gai[6], gai[7],cou);
+	//すべての圧力センサの数値(今回カウントに使用するのはgai[3]～gai[5]のセンサ)
+	fprintf(fp2, "Time[s],gai0[N],gai3[N],gai4[N],gai5[N],gai6[N],gai7[N],count\n", clk, gai[0], gai[3], gai[4], gai[5], gai[6], gai[7],cou);
 	fclose(fp2);
-
-
 	
 
-	
-	
-	
+	//初期化
+	gai[8] = { 0.0 };//記録用配列
+	cou = 0;//カウント用変数
+
   return RTC::RTC_OK;
 }
 
 
 RTC::ReturnCode_t Count::onDeactivated(RTC::UniqueId ec_id)
 {
+	
   return RTC::RTC_OK;
 }
 
 
 RTC::ReturnCode_t Count::onExecute(RTC::UniqueId ec_id)
 {   
-	float data3[9999] = { 0.0 };  //左FSR-408手前
-	float data4[9999] = { 0.0 };  //左FSR-408真上
-	float data5[9999] = { 0.0 };  //左FSR-408奥
-	int th_i = 0; //配列用
-	int first; //立ち上がり回数
+
+	//動作検知用配列
+	//初期化
+	data3[9999] = { 0.0 };  //左FSR-408手前
+	data4[9999] = { 0.0 };  //左FSR-408真上
+	data5[9999] = { 0.0 };  //左FSR-408奥
+	
+	int th_i = 0; //配列番号
+	int first; //GUIで取得したトレーニング回数
 	float threshold = 1; //閾値(初期化)
 	
 
@@ -154,16 +160,18 @@ RTC::ReturnCode_t Count::onExecute(RTC::UniqueId ec_id)
 				m_firstcouIn.read();
 				first = m_firstcou.data;
 
-           //回数リセット
+           //回数リセット(GUIのリセットボタンが押されるとfirstが0になる)
 				if (first == 0){
 					cou = 0;
 				};
 				
-			//カウント開始			
+			//カウント開始(閾値とトレーニング回数が設定されていたら始める)			
 				if (m_gainerIn.isNew() && threshold > 5 && first > 0){
 
-					++th_i;
+					++th_i;//配列の番号を増やす
+
 					m_gainerIn.read();
+
 					//圧力センサ値
 					data3[th_i] = m_gainer.data[3];
 					data4[th_i] = m_gainer.data[4];
@@ -172,13 +180,13 @@ RTC::ReturnCode_t Count::onExecute(RTC::UniqueId ec_id)
 					//時間取得
 					clk = clock() / CLOCKS_PER_SEC;
 					
-					//記録用ファイル生成
+					//記録用ファイルに書き込む
 					FILE *fp2;
 					fp2 = fopen("Count.csv", "a");
-					fprintf(fp2, "Time[s],ain0[N],ain3[N],ain4[N],ain5[N],ain6[N],ain7[N],count\n", clk, gai[0], gai[3], gai[4], gai[5], gai[6], gai[7], cou);
+					fprintf(fp2, "%d,%3.3f,%3.3f,%3.3f,%3.3f,%3.3f,%3.3f,%d\n", clk, gai[0], gai[3], gai[4], gai[5], gai[6], gai[7], cou);
 					fclose(fp2);
 
-					//カウント条件
+					//カウント条件(センサ値が閾値を超えたとき＋カウントが初めに設定したトレーニング回数以下の時)
 					if (((data3[th_i - 2] < threshold && data3[th_i - 1] >= threshold && data3[th_i]>threshold) || (data4[th_i - 2] < threshold && data4[th_i - 1] >= threshold && data4[th_i]>threshold) || (data5[th_i - 2] < threshold && data5[th_i - 1] >= threshold && data5[th_i]>threshold)) && cou < first)
 					{
 						cou = ++cou;
@@ -186,14 +194,15 @@ RTC::ReturnCode_t Count::onExecute(RTC::UniqueId ec_id)
 						m_countOut.write();
 					};
 
-					//初期化	
+					
+					//カウントが初めに設定したトレーニング回数になったら配列を初期化する	
 					if (cou >= first){
 						 data3[9999] = { 0.0 };
 						 data4[9999] = { 0.0 };
 						 data5[9999] = { 0.0 };
 						 th_i = 0;
 					};
-
+					
 				}
 		return RTC::RTC_OK;
 
