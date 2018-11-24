@@ -7,5 +7,6 @@
 ・Cheering_controlRTC  
 ・Gainer_3ForceSensorRTC  
 ・Voice_outputRTC  
-詳細はマニュアルをご参照ください。
-[](https://github.com/NanaOtsuka/Cheering-RTCs/blob/master/user_manual.pdf)  
+
+[詳細はマニュアルをご参照ください。][1]
+[1]:https://github.com/NanaOtsuka/Cheering-RTCs/blob/master/user_manual.pdf  
