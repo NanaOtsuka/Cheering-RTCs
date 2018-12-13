@@ -8,9 +8,8 @@
 ・Gainer_3ForceSensorRTC  
 ・Voice_outputRTC  
 
-詳細はマニュアルをご参照ください。  
-https://github.com/NanaOtsuka/Cheering-RTCs/blob/master/user_manual.pdf  
-
+詳細はマニュアルをご参照ください。(2018年12月13日 一部改訂しました。)    
+https://github.com/NanaOtsuka/Cheering-RTCs/blob/master/user_manual%20ver1.3.pdf  
 ・概要  
 https://github.com/NanaOtsuka/Cheering-RTCs/blob/master/RTMcontest.pptx  
 ・紹介動画  
